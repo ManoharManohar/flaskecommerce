@@ -13,7 +13,7 @@ import re
 app=Flask(__name__)
 app.secret_key='manohar@2024'
 app.config['SESSION_TYPE']='filesystem'
-client = razorpay.Client(auth=("rzp_test_hO4xe5Tf68Z20c", "dHl9OlOpcvK75y0kLerSIMwI"))
+#client = razorpay.Client(auth=("rzp_test_hO4xe5Tf68Z20c", "dHl9OlOpcvK75y0kLerSIMwI"))
 
 user=os.environ.get('RDS_USERNAME')
 db=os.environ.get('RDS_DB_NAME')
