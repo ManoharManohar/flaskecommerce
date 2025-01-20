@@ -3,7 +3,7 @@ from otp import genotp
 from cmail import sendmail
 from token_1 import encode,decode
 import os 
-import razorpay
+#import razorpay
 import mysql.connector
 
 from flask_session import Session 
@@ -572,7 +572,7 @@ def description(itemid):
     return render_template('description.html',item_data=item_data)
 
 
-@app.route('/pay/<itemid>/<name>/<float:price>',methods=['GET','POST'])
+'''@app.route('/pay/<itemid>/<name>/<float:price>',methods=['GET','POST'])
 def pay(itemid,name,price):
     try:
         qyt=int(request.form.get('qyt'))
@@ -659,7 +659,7 @@ def search():
             else:
                 flash('No item found')
                 return redirect(url_for('index'))
-        return render_template('index.html')
+        return render_template('index.html')'''
 
 @app.route('/addreview/<itemid>',methods=['GET','POST'])
 def addreview(itemid):
